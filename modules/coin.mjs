@@ -65,11 +65,12 @@ function countFlips(array) {
   array.forEach((flip => (flip == "heads") ? heads++ : tails++)) 
   /*if (heads == 0 && tails == 0) {
     return "Error: Empty array."
-  } else if (tails == 0 && heads != 0)  {
+  } else*/ 
+  if (tails == 0 && heads != 0)  {
     return { heads: heads }
   } else if (heads == 0 && tails != 0) {
     return { tails: tails }
-  }*/
+  }
   return { heads: heads, tails: tails }
 }
 
