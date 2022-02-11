@@ -63,10 +63,7 @@ function coinFlips(flips) {
 function countFlips(array) {
   let heads = 0, tails = 0
   array.forEach((flip => (flip == "heads") ? heads++ : tails++)) 
-  if (heads == 0 && tails == 0) {
-    return { }
-  } 
-   else if (tails == 0 && heads != 0)  {
+  if (tails == 0 && heads != 0)  {
     return { heads: heads }
   } else if (heads == 0 && tails != 0) {
     return { tails: tails }
